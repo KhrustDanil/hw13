@@ -1,0 +1,86 @@
+@use "../../presets" as *;
+
+.advantages {
+    margin-top: 25px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+    
+    
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(36, 163, 255, 1);
+
+        &:hover {
+            color: rgba(0, 133, 255, 1);
+            text-decoration: none;
+        }
+
+        &:active {
+            color: rgba(0, 108, 207, 1);
+        }
+
+    }
+
+    &__title--main {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            font-size: 38px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 768px) {
+           gap: 60px;
+        }
+    }
+    
+    &__item {
+
+        @media screen and (min-width: 768px) {
+            width: 45%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 28.9%;
+        }
+    }
+
+
+    &__picture {
+        padding-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        color: rgba(36, 163, 255, 1);
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.6;
+        color: $color-white;
+        opacity: 0.8;
+
+    }
+}

@@ -1,0 +1,106 @@
+@use "../../presets" as *;
+
+.team {
+
+    border-radius: 12px 0;
+    margin-top: 30px;
+    background-color: rgba(245, 245, 250, 1);
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+    
+
+    .team__link {
+        display: block;
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(36, 163, 255, 1);
+        text-transform: uppercase;
+
+        &:hover {
+            color: rgba(0, 133, 255, 1);
+            text-decoration: none;
+        }
+
+        &:active {
+            color: rgba(0, 108, 207, 1);
+        }
+    }
+
+    .slider__picture {
+        border-radius: 12px 12px 0 0 ;
+        min-width: 100%;
+
+        @media screen and (min-width: 1024px) {
+            min-width: 45%;
+            border-radius: 0;
+        }
+
+        @media screen and (min-width: 1440px) {
+            min-width: 30%;
+        }
+
+        @media screen and (min-width: 1920px) {
+            min-width: 20%;
+          }
+
+    }
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 7px;
+        width: 87.5%;
+        line-height: 1.3;
+        
+        @media screen and (min-width: 768px) {
+            font-size: 38px;
+        }
+
+    }
+
+    &__item {
+        // border-radius: 12px, 12px, 0, 0;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            font-size: 38px;
+        }
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .team__title {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(179, 179, 186, 1);
+        line-height: 1.2;
+    }
+
+    .team__title--second {
+        margin-top: 6px;
+        margin-left: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(179, 179, 186, 1);
+        line-height: 1.3;
+    }
+
+    .slider__circle {
+        padding-top: 20px;
+        background-color: white;
+
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.20.10/css/uikit-core-rtl.min.css" integrity="sha512-My7SURD54b+QOFkD4rqp2qXcq0qot0Lp61lCVmStGsKTeUapFjqJR7gZ3yllmdV11lnSgwXimvhIs+5CzpCXjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <!-- <div class="header__back"> -->
+        <header class="header header--sv">
+            <div class="conteiner--head">
+                <div class="header__cont">
+                <div class="info info--pub">
+                    <div class="lang ">
+                        <ul class="lang__list">
+                            <li class="lang__item"><a href="#" class="lang__link lang__link--pub">УК</a></li>
+                            <li class="lang__item"><a href="#" class="lang__link lang__link--pub">РУ</a></li>
+                            <li class="lang__item"><a href="#" class="lang__link lang__link--pub">EN</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <p class="contact__text contact__text--pub">Kyiv, Mechnikova str., 14/1</p>
+                        <a href="" class="contact__number contact__number--pub">0800 211 927</a>
+                        <a href="" class="contact__link">
+                            <!-- <img src="./images/Vector.png" alt="" class="contact__picture"> -->
+                        </a>
+                    </div>
+            </div>
+            <div class="navigation navigation--pub">
+                <div class="logo">
+                    <a href="../index.html" class="logo__link">
+                        <img src="../images/Logologo.png" alt="logo" class="logo__picture logo__pub">
+                        <img src="../images/Logologo.png" alt="logo" class="logo__picture--large logo__pub">
+                    </a>
+                    <img class="logo__slash--large" src="../images/Slash.png" alt="slash">
+                    <img class="logo__slash" src="../images/Slash2.png" alt="slash">
+                    <h2 class="logo__title logo__title--pub">Publications</h2>
+                </div>
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu__toggle">
+                    <label for="menu__toggle" class="menu__btn menu__btn--pub" id="back">
+                        <span></span>
+                    </label>
+                    <nav class="menu__box">
+                        <a href="#" class="menu__item menu__item--pub">about us</a>
+                        <a href="../pages/services.html" class="menu__item menu__item--pub">services</a>
+                        <a href="#" class="menu__item menu__item--pub">team</a>
+                        <a href="#" class="menu__item menu__item--pub menu__item--sv">publications</a>
+                        <a href="#" class="menu__item menu__item--pub linkPopup">contact</a>
+                    </nav>
+                  </div>
+                </div>
+            </div>
+            <div id="popup">
+                <div id="cross"></div>
+                    <form method="POST">
+                        <h2 class="popup__title">We would like to help you</h2>
+                        <input id="name" type="text" placeholder="Name">
+                        <input id="message" placeholder="Message" type="text">
+                        <h3 class="popup__title--second">How to answer you?</h3>
+                        <input id="number" type="tel" placeholder="Phone number">
+                        <input id="email" type="email" placeholder="Email">
+                        <input id="send" type="button" value="Send message">
+                    </form>
+            </div>
+        </div>
+            </header>
+            <main class="main">
+                <section class="publications conteiner--pub">
+                    <img src="../images/Coverpub.jpg" alt="gdpr" class="publications__picture">
+                    <h1 class="publications__title--main">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h1>
+                    <h4 class="publications__title--sm">September 29</h4>
+                    <p class="publications__text publications__text--spec">On January 21, the French National Data Protection Commission (CNIL) announced on its website that it had fined Google for violating the EU's General Data Protection Regulation (GDPR). It took six months for the EU countries to make a quality level-up in the amount of fines for non-compliance with this standard. Prior to that, the fine was mainly € 20,000-30,000, with the largest fine amounting to € 400,000 and related to a hospital in Portugal. But this precedent is interesting not so much the amount of the fine as the rigidity of the regulator's approaches. Denis Beregovyi, Axon Partners, explains why, especially for Mind.</p>
+                    <p class="publications__text">For what? The group complaints against Google arrived at CNIL on the same day that the GDPR came into force. The complainants reported that Google processed users' personal data without due cause, in particular to create personalized advertising offers.</p>
+                    <h2 class="publications__title--spec">To the attention of Ukrainian security officers: the inspection was conducted online, without searches, without seizure of servers or other visible interference for business. And so it was possible.</h2>
+                    <h3 class="publications__title">According to the results of CNIL inspections revealed violations of two requirements of the GDPR:</h3>
+                    <ol class="publications__list">
+                        <li class="publications__item">
+                            <p class="item--text">
+                                Transparency and awareness of users about the processing of personal data.
+                            </p>
+                        </li>
+                        <li class="publications__item">
+                            <p class="item--text">
+                                Lack of proper user consent for the processing of personal data for the purpose of personalizing advertising.
+                            </p>
+                        </li>
+                    </ol>
+                    <p class="publications__text">In the case of personalization of advertising, Google was sure to obtain the consent of users, because, firstly, when creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has a section "Ads personalization", where you can disable this feature.</p>
+                    <img src="../images/Illustrationads.jpg" alt="ads" class="publications__ads">
+                    <p class="publications__text--sm">This is what the ad personalization settings window in your Google Account looks like</p>
+                    <p class="publications__text">However, CNIL does not think so, because the information about the personalization of advertising is not clear enough to users. As an example, the Commission claims that the relevant "Personalization" window does not contain information on the full range of Google services that collect and process personal data for this purpose (YouTube, Google search, Play Store, Google pictures, Gmail, etc.). ), and therefore, the user cannot realize to what extent the data is used and how exactly they can be combined.</p>
+                    <h3 class="publications__title">So, let's walk through the text of the CNIL decision</h3>
+                    <p class="publications__text">Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the case was not initiated by the Irish, but by the French regulator. This is why it happened.</p>
+                    <p class="publications__text publications__text--br">If data processing decisions are taken anywhere outside the EU, there is a one-stop mechanism - where the complaint is received, the body considers it. Because Google's data processing center is located in the United States and the complaint was first received in France, CNIL considered it.</p>
+                    <div class="social">
+                        <a href="#" class="social__link">
+                            <img src="../images/Vectorfs.png" alt="facebook" class="social__picture">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="../images/Vectortg.png" alt="telegram" class="social__picture">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="../images/Vectorin.png" alt="In" class="social__picture">
+                        </a>
+                    </div>
+                </section>
+                <div class="wrap">
+                <section class="news news--pub conteiner">
+                    <a href="" class="news__link">Publications ᐳ</a>
+                    <h2 class="news__title--main">We have something to tell</h2>
+                    <div class="news__content">
+                        <div class="news__wrap">
+                            <div class="news__block">
+                                <img src="../images/Cover.png" alt="analitik" class="news__picture">
+                                <div class="news__info">
+                                <h3 class="news__title">Equity associate</h3>
+                                <h4 class="news__title--second">April 22</h4>
+                                <p class="news__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                                </div>
+                            </div>
+                            <div class="news__block">
+                                <img src="../images/Cover1.png" alt="gdpr" class="news__picture">
+                                <div class="news__info">
+                                <h3 class="news__title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3>
+                                <h4 class="news__title--second">September 29</h4>
+                                <p class="news__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="news__block--spec">
+                            <img src="../images/Cover2.png" alt="team" class="news__picture">
+                            <div class="news__info">
+                            <h3 class="news__title">Millennial Testament</h3>
+                            <h4 class="news__title--second">August 19</h4>
+                            <p class="news__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </main>
+            <div class="wrap">
+                <footer class="footer conteiner">
+                    <div class="footer__item">
+                        <div class="footer__block--address">
+                            <p class="footer__text">Kyiv, Mechnikova str., 14/1</p>
+                            <a href="" class="footer__link">On map</a>
+                        </div>
+                        <div class="footer__block--contact">
+                            <a href="#" class="footer__link--logo"></a>
+                            <a href="#" class="footer__link--phone">0800 211 927</a>
+                            <a href="#" class="footer__link--email">contact@forstudy.space</a>
+                        </div>
+                        <div class="footer__block--copyright">
+                            <p class="footer__copyright--text">© 2021 HLEGAL Law company, LLC</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.20.10/js/uikit.min.js" integrity="sha512-IDjLlrywYtoTTMg5nTtlxkQUpZPu7P5j0DP6TKa3xsz/na/hZNVd6blOTWT37Ohah3zwpyf0iB65NU70UkLt3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

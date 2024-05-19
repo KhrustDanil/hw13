@@ -1,0 +1,38 @@
+
+
+.conteiner {
+    width: min(100% - 60px, 1600px);
+    margin-inline: auto;
+
+            @media screen and (min-width: 768px) {
+                width: min(100% - 120px, 1600px);
+            }
+}
+
+.conteiner--head {
+    width: min(100% - 40px, 1600px);
+    margin-inline: auto;
+
+    @media screen and (min-width: 768px) {
+        width: min(100% - 120px, 1600px);
+    }
+
+        @media screen and (min-width: 1920px) {
+            width: min(100% - 360px, 1600px);
+        }
+}
+
+.conteiner--pub {
+    width: min(100% - 60px, 1600px);
+    margin-inline: auto;
+
+            @media screen and (min-width: 768px) {
+                width: min(100% - 120px, 1600px);
+            }
+            @media screen and (min-width: 1440px) {
+                width: min(100% - 360px, 1600px);
+            }
+                @media screen and (min-width: 1920px) {
+                    width: min(100% - 560px, 1600px);
+                }
+}
