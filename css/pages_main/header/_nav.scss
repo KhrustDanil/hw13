@@ -12,7 +12,7 @@
   padding: 30px 30px;
   border-radius: 20px;
   z-index: 102;
-  background-color: rgba(245, 245, 250, 1);
+  background-color: $color-grey--bg;
 
   @media screen and (min-width: 768px) {
     width: 650px;
@@ -21,14 +21,14 @@
 }
 
 .popup__title {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: $font-size-title--mob;
+  font-weight: $font-weight--lg;
   line-height: 1.2;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background: $gradient--text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media screen and (min-width: 768px) {
-    font-size: 38px;
+    font-size: $font-size-title;
 }
 }
 
@@ -55,7 +55,7 @@
   content: "";
   width: 3px;
   height: 24px;
-  background-color: rgba(236, 111, 93, 1);
+  background-color: $color-cross;
   z-index: 2;
   cursor: pointer;
 
@@ -69,7 +69,7 @@
   margin-top: 30px;
 }
 
-#name, #email, #number {
+#name, #email, #number, #message {
   width: 100%;
   margin-bottom: 15px;
   padding: 15px ;
@@ -79,41 +79,37 @@
 }
 
 #message {
-  width: 100%;
-  margin-bottom: 15px;
   padding: 15px 0 75px 15px;
-  border-radius: 8px;
-  border: 0;
 }
 
 .popup__title--second {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: rgba(179, 179, 186, 1);
+  font-size: $font-size--sm;
+  font-weight: $font-weight--lg;
+  letter-spacing: $letter-spacing;
+  color: $color-grey--text;
 }
 
 #send {
   margin-top: 30px;
   width: 100%;
   padding: 18px 30px 18px 30px;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
+  font-size: $font-size;
+  font-weight: $font-weight--lg;
+  color: $color-white;
   border: 0;
-  background-color: rgba(36, 163, 255, 1);
+  background-color: $color-active;
   border-radius: 12px;
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
 
 
   &:hover {
-    background-color: rgba(0, 133, 255, 1);
+    background-color: $color-active--hover;
   }
 
   &:active {
-    background-color: rgba(0, 108, 207, 1);
+    background-color: $color-active--active;
   }
 }
 
@@ -159,7 +155,7 @@
 }
 
 &--pub::after {
-  background-color: rgba(245, 245, 250, 1);
+  background-color: $color-grey--bg;
 }
 
   .lang {
@@ -171,7 +167,7 @@
 
       &::after {
         content: "";
-        background-color: rgba(230, 230, 240, 1);
+        background-color: $color-grey--sep;
         border-radius: 50%;
         width: 6px;
         height: 6px;
@@ -187,7 +183,7 @@
     &::after {
       content: "";
       display: block;
-      background-color: rgba(230, 230, 240, 1);
+      background-color: $color-grey--sep;
       border-radius: 50%;
       width: 6px;
       height: 6px;
@@ -205,8 +201,8 @@
     }
 
     &__item {
-      font-size: 12px;
-      font-weight: 700;
+      font-size: $font-size--sm-mob;
+      font-weight: $font-weight--lg;
       padding: 5px 7px 5px 7px;
       border-radius: 8px;
       
@@ -216,16 +212,16 @@
       }
 
       &:active {
-        background-color: rgba(240, 20, 90, 1);
+        background-color: $color-list;
       }
     }
     
     &__link--pub:nth-child(n) {
-      color: rgba(179, 179, 186, 1);
+      color: $color-grey--text;
     }
 
     &__link {
-      color: white;
+      color: $color-white;
       text-decoration: none;
       gap: 6px;
     }
@@ -236,14 +232,14 @@
     margin-top: 5px;
     display: flex;
     gap: 15px;
-    color: white;
+    color: $color-white;
     
     @media screen and (min-width: 1920px) {
       gap: 20px;
   }
 
     &__text--pub {
-      color: rgba(179, 179, 186, 1);
+      color: $color-grey--text;
     }
 
     &__text {
@@ -254,7 +250,7 @@
         
         &::after {
           content: "";
-          background-color: rgba(230, 230, 240, 1);
+          background-color: $color-grey--sep;
           border-radius: 50%;
           width: 6px;
           height: 6px;
@@ -270,7 +266,7 @@
       &::after {
         content: "";
         display: block;
-        background-color: rgba(230, 230, 240, 1);
+        background-color: $color-grey--sep;
         border-radius: 50%;
         width: 6px;
         height: 6px;
@@ -289,19 +285,19 @@
 
 &__number {
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   z-index: 10;
 
   &:hover {
     text-decoration: none;
-    color: rgba(240, 20, 90, 1);
+    color: $color-list;
   }
   
   @media screen and (min-width: 768px) {
     
     &::after {
       content: "";
-      background-color: rgba(230, 230, 240, 1);
+      background-color: $color-grey--sep;
       border-radius: 50%;
       width: 6px;
       height: 6px;
@@ -317,7 +313,7 @@
     &::after {
       content: "";
       display: block;
-      background-color: rgba(230, 230, 240, 1);
+      background-color: $color-grey--sep;
       border-radius: 50%;
       width: 6px;
       height: 6px;
@@ -331,7 +327,7 @@
   
 }
 &__number--pub {
-  color: rgba(179, 179, 186, 1);
+  color: $color-grey--text;
 }
 
 &__link {
@@ -376,8 +372,27 @@
     width: 91%;
 }
 
+
+@media screen and (min-width: 1440px) {
+    width: 89%;
+}
+
 &--pub {
   width: 89.4%;
+
+  @media screen and (min-width: 1440px) {
+    width: 92%;
+}
+  @media screen and (min-width: 1800px) {
+    width: 89%;
+}
+}
+
+&--sv {
+  @media screen and (min-width: 1440px) {
+    width: 89%;
+}
+
 }
 
   .logo {
@@ -438,10 +453,10 @@
     }
 
     &__title {
-      font-size: 20px;
+      font-size: $font-size--spec;
       display: flex;
       align-items: center;
-      color: rgba(255, 255, 255, 1);
+      color: $color-white;
 
       
       @media screen and (min-width: 768px) {
@@ -453,7 +468,7 @@
     }
 
     &__title--pub {
-      color: rgba(50, 50, 100, 1);
+      color: $color-main--regular;
     }
     
     &__picture--large {
@@ -515,7 +530,7 @@
       content: "";
       width: 3px;
       height: 24px;
-      background-color: rgba(236, 111, 93, 1);
+      background-color: $color-cross;
       z-index: 2;
       cursor: pointer;
       transform: rotate(45deg);
@@ -528,25 +543,12 @@
       content: "";
       width: 3px;
       height: 24px;
-      background-color: rgba(236, 111, 93, 1);
+      background-color: $color-cross;
       z-index: 2;
       cursor: pointer;
       transform: rotate(-45deg);
     }
-    
-    // &::before, &::after {
-    //   position: relative;
-    //   display: block;
-    //   top: 0px;
-    //   right: 9px;
-    //   content: "";
-    //   width: 3px;
-    //   height: 24px;
-    //   background-color: rgba(236, 111, 93, 1);
-    //   z-index: 2;
-    //   cursor: pointer;
-    
-    // }
+
   }
 
   /* Стилизация "гамбургера" */
@@ -557,13 +559,13 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: $color-white;
   }
 
   .menu__btn--pub > span,
   .menu__btn--pub > span::before,
   .menu__btn--pub > span::after {
-    background-color: rgba(50, 50, 100, 1);
+    background-color: $color-main--regular;
   }
 
   .menu__btn > span::before {
@@ -592,7 +594,7 @@
     padding: 80px 0;
     list-style: none;
     text-align: center;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 10px;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     z-index: 100;
@@ -604,29 +606,26 @@
     margin-bottom: 15px;
     width: 80%;
     padding: 12px 24px;
-    color: rgba(36, 163, 255, 1);
+    color: $color-active;
     border-radius: 12px;
-    background-color: rgba(245, 245, 250, 1);
+    background-color: $color-grey--bg;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: $font-weight--lg;
     text-decoration: none;
   }
 
-  .menu__item:hover {
-    color: rgba(240, 20, 90, 1);
+  .menu__item:hover, .menu__item--sv {
+    color: $color-list;
     text-decoration: none;
   }
 
   .menu__item:active {
-    background-color: rgba(230, 230, 240, 1);
+    background-color: $color-grey--sep;
     text-decoration: none;
-    color: rgba(36, 163, 255, 1);
+    color: $color-active;
 
   }
 
-  .menu__item--sv {
-        color: rgba(240, 20, 90, 1);
-  }
  }
 
 @media screen and (min-width: 768px) {
@@ -639,26 +638,32 @@
     padding: 10px 0;
     list-style: none;
     text-align: center;
-    color: white;
+    color: $color-white;
+    gap: 15px;
   }
 
+  @media screen and (min-width: 1024px) {
+    .menu__box {
+      padding: 0;
+    }
+  }
   
   .menu__item {
     display: block;
-    margin-top: 10px;
-    padding: 12px 15px 12px 0;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
+    margin-top: 5px;
+    padding: 12px 0px 0px 0;
+    color: $color-white;
+    font-size: $font-size;
+    font-weight: $font-weight--lg;
     text-decoration: none;
   }
   
   .menu__item--pub {
-    color: rgba(36, 163, 255, 1);
+    color: $color-active;
   }
 
   .menu__item:hover {
-    color: rgba(240, 20, 90, 1);
+    color: $color-list;
     text-decoration: none;
     transition: all 0.5s;
     transform: scale(1.02);
@@ -671,7 +676,7 @@
         display: block;
         top: 5px;
         right: 0;
-        background: #F0145A;
+        background: $color-list;
         transition: width 0.2s ease;
         -webkit-transition: width 0.2s ease;
     }

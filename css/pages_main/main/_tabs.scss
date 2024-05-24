@@ -7,8 +7,6 @@
     display: flex;
     flex-direction: column;
     
-    
-    
     @media screen and (min-width: 768px) {
         margin-top: 60px;
     }
@@ -36,36 +34,34 @@
         flex-direction: row;
         padding-bottom: 20px;
         gap: $gap;
-        overflow-x: scroll;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
 
         @media screen and (min-width: 1024px) {
             flex-direction: column;
             overflow: hidden;
             text-align: right;
             padding-right: 60px;
-            gap: 30px;
+            gap: $gap;
          }
     }
 
     &__link {
-        font-size: 30px;
-        font-weight: 700;
-        color: rgba(179, 179, 186, 1);
+        font-size: $font-size-title--mob;
+        font-weight: $font-weight--lg;
+        color: $color-grey--text;
         white-space: nowrap;
-
-        &:hover {
-            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
         
         @media screen and (min-width: 768px) {
-            font-size: 38px;
+            font-size: $font-size-title;
         }
     }
 
-    &__link--active {
-        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    &__link--active, &__link:hover {
+        background: $gradient--text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -79,13 +75,13 @@
 
     &__title {
         margin-top: 25px;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: $font-size--spec;
+        font-weight: $font-weight--lg;
         color: $color-white;
         margin-bottom: 15px;
 
         @media screen and (min-width: 768px) {
-            font-size: 30px;
+            font-size: $font-size-title--mob;
         }
 
         @media screen and (min-width: 1024px) {
@@ -102,7 +98,6 @@
         line-height: 1.5;
         
         @media screen and (min-width: 768px) {
-            font-size: 19px;
             line-height: 1.7;
         }
     }

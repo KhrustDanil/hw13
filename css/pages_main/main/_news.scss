@@ -1,7 +1,7 @@
 @use "../../presets" as *;
 
 .wrap {
-    background-color: rgba(245, 245, 250, 1);
+    background-color: $color-grey--bg;
 }
 
 .news {
@@ -17,41 +17,32 @@
     }
 
     &__link {
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 1px;
+        font-size: $font-size--sm;
+        font-weight: $font-weight--lg;
+        letter-spacing: $letter-spacing;
         text-transform: uppercase;
-        color: rgba(36, 163, 255, 1);
-
-        &:hover {
-            color: rgba(0, 133, 255, 1);
-            text-decoration: none;
-        }
-
-        &:active {
-            color: rgba(0, 108, 207, 1);
-        }
+        color: $color-active;
     }
 
     &__title--main {
-        font-size: 30px;
-        font-weight: 700;
+        font-size: $font-size-title--mob;
+        font-weight: $font-weight--lg;
         line-height: 1.2;
-        padding-top: 5px;
+        padding-top: 10px;
         margin-bottom: 30px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background: $gradient--text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
         @media screen and (min-width: 1024px) {
-            font-size: 38px;
+            font-size: $font-size-title;
         }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: $gap;
         
         @media screen and (min-width: 1024px) {
             flex-direction: row;
@@ -73,7 +64,7 @@
     &__wrap {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: $gap;
 
         
         @media screen and (min-width: 768px) {
@@ -95,39 +86,41 @@
             min-width: 100%;
         }
 
-        &__title {
-            display: block;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 16px;
-            font-weight: 700;
-            color: rgba(36, 163, 255, 1);
-            line-height: 1.2;
-
+        &__title, &__link {
             &:hover {
-                color: rgba(0, 133, 255, 1);
+                color: $color-active--hover;
                 text-decoration: none;
             }
 
             &:active {
-                color: rgba(0, 108, 207, 1);
+                color: $color-active--active;
             }
         }
 
+        &__title {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: $font-size;
+            font-weight: $font-weight--lg;
+            color: $color-active;
+            line-height: 1.2;
+        }
+
         &__title--second {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: rgba(179, 179, 186, 1);
+            font-size: $font-size--sm-mob;
+            font-weight: $font-weight--lg;
+            letter-spacing: $letter-spacing;
+            color: $color-grey--text;
             margin-bottom: 15px;
         }
 
         &__text {
             padding-top: 15px;
             padding-bottom: 30px;
-            font-size: 14px;
+            font-size: $font-size--sm;
             line-height: 1.4;
-            color: black;
-            border-top: 4px solid rgba(230, 230, 240, 1);
+            color: $color-black;
+            border-top: 4px solid $color-grey--sep;
         }
 }
